@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card mb-3">
+  
+  <p>{{ user.username }}</p>
+  <p>{{ user.email }}</p>
+  <P>{{ user.age }}</P>
+  <p>{{ user.password }}</p>
+  <p>{{ user.id }}</p>
+<p>wefwef werfwefwef</p>
+{% if user_movie %}
+  {% for i in user_movie %}
+      <p>fhnrtnbtynt</p>
+    <p><img src="https://image.tmdb.org/t/p/w500/{{ i.img_url }}"/></p>
+    <p>{{i.title}}</p>
+    {% endfor %}
+  {% else %}
+  <h1>No Data</h1>
+  {% endif %}
+</div>
+{% endblock content %}

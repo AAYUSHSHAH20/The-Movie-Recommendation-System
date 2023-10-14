@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 style="text-align: center; margin: 10px; padding: 10px;color: white; background-color: black; border: 2px solid black; border-radius: 6px;">Movie Recommendations</h1>
+    <div style="width: 100%; text-align: center; display: flex; justify-content: center;">
+        <form method="GET" action="{% url 'recommand' %}" style="text-align: center; display: flex; flex-direction: column; width: 20%; justify-content: center;">
+            <label for="movie_title">Enter a movie title:</label>
+            <input type="text" id="movie_title" name="movie_title">
+            <input type="submit" value="Search" style="border: 1px solid black; background-color: black; color: white; border-radius: 6px; text-align: center;">
+        </form>
+    </div>
+    <hr>
+    {% if not recommended_movies.empty %}
+    <h2 style="text-align: center; padding: 20px 0;">Recommended Movies:</h2>
+    <div style="width: 100%; display: flex; justify-content: center;">
+        <table>
+            <tr>
+                <th>Movie Title
+                    <hr>
+                </th>
+                <th>Movie Genre
+                    <hr>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    {% for movie in recommended_movies.title %}
+                    <p>{{ movie.title }} </p>
+                    {% endfor %}
+                </td>
+                <td>
+                    {% for movie in recommended_movies.genres %}
+                    <p>{{ movie.title }} </p>
+                    {% endfor %}
+                </td>
+            </tr>
+        </table>
+    </div>
+{% else %}
+    <h2 style="text-align: center; padding-top: 20px;">No Recommendations Found</h2>
+{% endif %}
+{% endblock content %}
