@@ -4,7 +4,7 @@ from .form import MovieForm,ReviewForm,MovieTypeForm
 from .models import Movie,Review
 from django.contrib.auth.decorators import login_required
 
-movie_key = "e35b8f1415cec2229f2b61f89ea5db75"
+movie_key = "your_api_key"
 movie_url = "https://api.themoviedb.org/3/search/movie"
  
 def home(request):
