@@ -54,7 +54,7 @@ A web-based Movie Recommendation System built with Django that utilizes data fro
 - **Django**: The web framework used for building the application.
 - **The Movie Database API**: For fetching movie data.
 - **Machine Learning**: Utilized to power the recommendation system.
-- **HTML, CSS, JavaScript**: For the frontend design and interactivity.
+- **HTML, CSS**: For the frontend design and interactivity.
 
 ## Acknowledgments
 
