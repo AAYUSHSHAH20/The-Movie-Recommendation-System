@@ -56,17 +56,6 @@ A web-based Movie Recommendation System built with Django that utilizes data fro
 - **Machine Learning**: Utilized to power the recommendation system.
 - **HTML, CSS, JavaScript**: For the frontend design and interactivity.
 
-## Contributing
-
-If you'd like to contribute to this project, please follow our [Contribution Guidelines](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - Special thanks to [The Movie Database](https://www.themoviedb.org/) for providing the movie data.
-- Thanks to the open-source community for their valuable contributions to Django and machine learning libraries.
-
-Feel free to customize the README to include any additional information or details specific to your project. Make sure to keep the README updated as your project evolves.
