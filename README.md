@@ -1,5 +1,3 @@
-Certainly, creating a clear and informative README for your GitHub repository is essential to help users understand your Movie Recommendation System project. Here's a template and descriptions you can use as a starting point for your README file:
-
 # Movie Recommendation System with Django
 
 ![Python Version](https://img.shields.io/badge/Python-3.9-brightgreen)
